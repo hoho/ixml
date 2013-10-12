@@ -115,7 +115,7 @@ Special namespace's node names should start with upper case letter (it will be l
 
 Here is how translation works (say, `sns` is a prefix for special namespace and `other` is a prefix for just some other namespace):
 
-| IXML node name | XML node name | Comment |
+| IndentXML node name | XML node name | Comment |
 |----------------|---------------|---------|
 | `NODE` | `<sns:node>` | Node from special namespace |
 | `Node` | `<sns:nODE>` | Only first upper case letter matters in special namespace detection, other letters case is inverted |
@@ -130,7 +130,7 @@ Here is how translation works (say, `sns` is a prefix for special namespace and 
 
 This code:
 
-    STYLESHEET[version="1.0]
+    STYLESHEET[version="1.0"]
         : http://www.w3.org/1999/XSL/Transform
 
         TEMPLATE[match="/"]
