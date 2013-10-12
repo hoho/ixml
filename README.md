@@ -13,7 +13,7 @@ Basic principles
 * CDATA sections should be wrapped with triple quotes.
 * Namespace declaration is a `:` sign, followed by space, followed by namespace prefix, followed by space followed by namespace URL.
 * Processing instruction is a `?` sign, followed by space, followed by processing instruction content.
-* Doctype is a `!` sign, followed by space, followed by content. *Doctypes with complex content and entities are under consideration*.
+* Doctype is a `!` sign, followed by space, followed by content. *Doctypes with complex content and custom entities are under consideration*.
 * Empty lines are ignored.
 * Everything that doesn't start with `:` followed by space, `@`, `?` or `!` is interpreted as an unrollable CSS selector and means node.
 * There are single line comments (`// Here is the comment`) and multiline comments (`/* This thing could be multiline */`).
@@ -27,10 +27,21 @@ Unrollable CSS selector is a CSS selector that unambiguously describes node name
 
 Examples:
 
-| IndentXML | XML |
-|-----------|-----|
-| `node#i.some[attr=value][another="another value"].other` | `<node id="i" class="some other" attr="value" another="another value">` |
-| `prefix:node[aaa=bbb]` | `<prefix:node aaa="bbb">` |
+Unrollable CSS selector
+
+    node#i.some[attr=value][another="another value"].other
+
+Unrolls to
+
+    <node id="i" class="some other" attr="value" another="another value">
+
+And this one
+
+    prefix:node[aaa=bbb]
+
+Unrolls to
+
+    <prefix:node aaa="bbb">
 
 
 Examples
