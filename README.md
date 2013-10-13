@@ -49,9 +49,9 @@ Examples
 
 This code:
 
-    world[beautiful="indeed"]
+    world[beautiful="indeed"] // One way to set attributes.
         hello
-            @greeting "yes"
+            @greeting "yes" // Another way to set attributes.
             nice
                 "to"
             meet
