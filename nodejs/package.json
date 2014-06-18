@@ -1,0 +1,32 @@
+{
+    "name": "ixml",
+    "version": "0.0.0",
+    "description": "IndentedXML",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/hoho/ixml.git"
+    },
+    "keywords": [
+        "IndentedXML XML DOM"
+    ],
+    "author": "Marat Abdullin <dakota@brokenpipe.ru>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hoho/ixml/issues"
+    },
+    "dependencies": {
+        "xmldom": "~0.1.19",
+        "xpath": "~0.0.6"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "should": "*"
+    }
+}
