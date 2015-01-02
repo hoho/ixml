@@ -36,7 +36,7 @@ Could be written like:
         true
     null
         null
-    array[]
+    array []
         "Some string"
         123
         true
@@ -49,12 +49,12 @@ Could be written like:
         []
             234
             435
-    object{}
+    object {}
         key
             "value"
-        key2[]
+        key2 []
             "value2"
-        key3{}
+        key3 {}
             value
                 3
 ```
