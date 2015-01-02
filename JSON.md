@@ -26,7 +26,7 @@ A way to represent JSON in an indented syntax.
 
 Could be written like:
 
-```
+```json
 {}
     string
         "Some string"
